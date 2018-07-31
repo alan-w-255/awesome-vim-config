@@ -1,6 +1,7 @@
-set relativenumber
+set number
 set noshowmode
-set autochdir
+set expandtab
+set shiftwidth=2
 let g:lightline = {
     \'colorscheme': 'powerline',
     \'active': {
@@ -10,4 +11,4 @@ let g:lightline = {
     \'component_function': {
     \  'gitbranch': 'fugitive#head'
     \},
-    \ }
+ \}
