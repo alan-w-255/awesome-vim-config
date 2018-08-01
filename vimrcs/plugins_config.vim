@@ -157,7 +157,7 @@ let g:go_fmt_command = "goimports"
 " => Syntastic (syntax checker)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:ale_linters = {
-\   'javascript': ['jshint'],
+\   'javascript': ['standard'],
 \   'python': ['flake8'],
 \   'go': ['go', 'golint', 'errcheck']
 \}
@@ -170,6 +170,9 @@ let g:ale_set_highlights = 0
 " Only run linting when saving the file
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
+let g:ale_fixers = {
+\   'javascript': ['standard']
+\}
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
