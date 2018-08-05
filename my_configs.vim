@@ -11,6 +11,8 @@ set shiftwidth=2
 set nofoldenable
 set nohls
 set updatetime=400
+set shell=/bin/zsh
+set term=xterm-256color
 
 " keep cursor always in center
 
@@ -27,7 +29,6 @@ if bufname('#') != ''
   augroup END
 endif
 
-" --- lint ---
 
 " --- auto completion
 let g:ale_completion_enabled=1
@@ -46,7 +47,7 @@ let g:lightline = {
       \ 'colorscheme':  'mycolortheme',
       \ 'active': {
       \   'left': [ ['mode', 'paste'],
-      \             ['readonly', 'filename', 'modified'] ],
+      \             ['filename'], ['readonly'], ['modified'] ],
       \   'right': [[ 'lineinfo' ], ['percent'], ['fugitive' ] ]
       \ },
       \ 'component': {

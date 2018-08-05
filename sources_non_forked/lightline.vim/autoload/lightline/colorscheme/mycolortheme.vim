@@ -11,11 +11,12 @@ let s:deepgrey = '#444444'
 let s:grey = '#808080'
 let s:black = '#000000'
 let s:darkred = '#af0000'
+let s:brightgreen = '#5fff00'
 
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 
 " normal mode statusline
-let s:p.normal.left = [ [ s:darkblue, s:white], [s:white, s:deepblue ] ]
+let s:p.normal.left = [ [ s:darkblue, s:white], [s:white, s:deepblue ], [s:black, s:brightgreen], [ s:red, s:cyan ] ]
 let s:p.normal.right = [ [ s:cyan, '#d70087' ], [ '#d70087',  s:cyan], [ s:brightgrey, s:red ] ]
 let s:p.normal.middle = [ [ s:white, s:darkgrey] ]
 
