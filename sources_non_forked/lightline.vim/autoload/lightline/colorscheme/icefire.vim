@@ -21,13 +21,13 @@ let s:p.normal.right = [ [ s:cyan, '#d70087' ], [ '#d70087',  s:cyan], [ s:brigh
 let s:p.normal.middle = [ [ s:white, s:darkgrey] ]
 
 " insert mode statusline
-let s:p.insert.left = [ [ s:white, s:red], [s:white, s:deepblue ] ]     " insert mode bottom left
+let s:p.insert.left = [ [ s:white, s:red], [s:white, s:deepblue ], [s:black, s:brightgreen], [ s:red, s:cyan ] ]     " insert mode bottom left
 
 " replace mode statusline
-let s:p.replace.left = [ [ s:darkblue, s:brightyellow ], [s:white, s:deepblue ] ]
+let s:p.replace.left = [ [ s:darkblue, s:brightyellow ], [s:white, s:deepblue ], [s:black, s:brightgreen], [ s:red, s:cyan ] ]
 
 " visual mode statusline
-let s:p.visual.left = [ [ s:red, s:cyan ], [ s:white, s:deepblue ] ]
+let s:p.visual.left = [ [ s:red, s:cyan ], [ s:white, s:deepblue ], [s:black, s:brightgreen], [ s:red, s:cyan ] ]
 
 
 " inactive pane statusline
@@ -45,5 +45,5 @@ let s:p.tabline.right = copy(s:p.normal.right)
 let s:p.normal.error = [ [ s:red, s:darkgrey] ]
 let s:p.normal.warning = [ [ s:brightyellow, s:darkgrey] ]
 
-let g:lightline#colorscheme#mycolortheme#palette = lightline#colorscheme#fill(s:p)
+let g:lightline#colorscheme#icefire#palette = lightline#colorscheme#fill(s:p)
 
