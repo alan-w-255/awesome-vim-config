@@ -13,11 +13,20 @@ set nohls
 set updatetime=400
 set shell=/bin/zsh
 set term=xterm-256color
+colorscheme ron
 
+"""""""""""""""""""""""
+" key remapping
+"""""""""""""""""""""""
 " keep cursor always in center
-
 " noremap j jzz
 " noremap k kzz
+" 
+tnoremap <C-J> <C-W>j
+tnoremap <C-K> <C-W>k
+tnoremap <C-L> <C-W>l
+tnoremap <C-H> <C-W>h
+tnoremap <Esc> <C-W>N
 
 " Persistent folds between Vim sessions
 
