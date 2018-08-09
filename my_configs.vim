@@ -21,12 +21,10 @@ colorscheme ron
 " keep cursor always in center
 " noremap j jzz
 " noremap k kzz
-" 
-tnoremap <C-J> <C-W>j
-tnoremap <C-K> <C-W>k
-tnoremap <C-L> <C-W>l
-tnoremap <C-H> <C-W>h
+
 tnoremap <Esc> <C-W>N
+noremap <leader>a <C-a>
+noremap <leader>x <C-x>
 
 " Persistent folds between Vim sessions
 
